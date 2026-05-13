@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Color Predict Pro</title>
+
+<style>
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial,sans-serif;
+}
+
+body{
+  background:radial-gradient(circle at top,#1f1147,#090014 60%);
+  color:white;
+  overflow-x:hidden;
+}
+
+.container{
+  width:100%;
+  max-width:430px;
+  margin:auto;
+  padding:20px;
+  text-align:center;
+}
+
+.logo{
+  font-size:42px;
+  font-weight:bold;
+  margin-top:20px;
+  background:linear-gradient(90deg,#ff00ff,#00f0ff,#00ff73);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+  animation:glow 2s infinite alternate;
+}
+
+@keyframes glow{
+  from{
+    filter:drop-shadow(0 0 10px #ff00ff);
+  }
+  to{
+    filter:drop-shadow(0 0 25px #00f0ff);
+  }
+}
+
+.sub{
+  margin-top:10px;
+  color:#d1d5db;
+  font-size:19px;
+  margin-bottom:25px;
+}
+
+.card{
+  background:rgba(255,255,255,0.06);
+  border:1px solid rgba(255,255,255,0.08);
+  backdrop-filter:blur(12px);
+  border-radius:28px;
+  padding:20px;
+  overflow:hidden;
+  box-shadow:0 0 35px rgba(255,0,255,0.2);
+}
+
+.banner{
+  width:100%;
+  height:320px;
+  object-fit:cover;
+  border-radius:22px;
+  margin-bottom:20px;
+  box-shadow:0 0 25px rgba(0,255,255,0.3);
+}
+
+.live{
+  display:inline-block;
+  background:red;
+  color:white;
+  padding:8px 16px;
+  border-radius:50px;
+  font-weight:bold;
+  margin-bottom:15px;
+  animation:blink 1s infinite;
+}
+
+@keyframes blink{
+  50%{
+    opacity:0.5;
+  }
+}
+
+.main-title{
+  font-size:33px;
+  color:#00f0ff;
+  margin-bottom:15px;
+  font-weight:bold;
+}
+
+.desc{
+  color:#d1d5db;
+  line-height:28px;
+  font-size:17px;
+  margin-bottom:25px;
+}
+
+.join-btn{
+  display:block;
+  width:100%;
+  text-decoration:none;
+  background:linear-gradient(90deg,#ff00cc,#3333ff);
+  padding:18px;
+  border-radius:50px;
+  color:white;
+  font-size:22px;
+  font-weight:bold;
+  margin-bottom:25px;
+  box-shadow:0 0 20px rgba(255,0,255,0.4);
+}
+
+.timer-box{
+  margin-top:10px;
+}
+
+.timer-title{
+  font-size:18px;
+  color:#facc15;
+}
+
+.timer{
+  font-size:65px;
+  color:#ff3b3b;
+  font-weight:bold;
+  margin-top:10px;
+  text-shadow:0 0 15px red;
+}
+
+.stats{
+  display:flex;
+  justify-content:space-between;
+  gap:12px;
+  margin-top:30px;
+}
+
+.stat{
+  flex:1;
+  background:rgba(255,255,255,0.05);
+  padding:18px 10px;
+  border-radius:18px;
+  border:1px solid rgba(255,255,255,0.08);
+}
+
+.stat h2{
+  color:#00ff73;
+  margin-bottom:5px;
+}
+
+.features{
+  margin-top:28px;
+  text-align:left;
+}
+
+.feature{
+  background:rgba(255,255,255,0.05);
+  margin-bottom:12px;
+  padding:15px;
+  border-radius:16px;
+  border-left:4px solid #00f0ff;
+}
+
+.footer{
+  margin-top:35px;
+  color:#9ca3af;
+  padding-bottom:20px;
+  font-size:15px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <div class="logo">
+    COLOR PREDICT PRO
+  </div>
+
+  <div class="sub">
+    India's No.1 Prediction Community 🔥
+  </div>
+
+  <div class="card">
+
+    <img class="banner"
+    src="https://i.ibb.co/0jvQRXjQ/IMG-20260513-WA0002.jpg">
+
+    <div class="live">
+      🔴 LIVE SIGNALS
+    </div>
+
+    <div class="main-title">
+      Recover Your Loss Fast ⚡
+    </div>
+
+    <div class="desc">
+      Premium Telegram signals, winning strategy & fast recovery methods 📈💸
+    </div>
+
+    <a href="https://t.me/+NAgUZbgj6g03NDE1"
+    class="join-btn"
+    target="_blank">
+      🚀 JOIN FREE TELEGRAM
+    </a>
+
+    <div class="timer-box">
+
+      <div class="timer-title">
+        ⏳ Redirecting To Telegram In
+      </div>
+
+      <div class="timer" id="timer">
+        3
+      </div>
+
+    </div>
+
+    <div class="stats">
+
+      <div class="stat">
+        <h2>95%</h2>
+        <p>Accuracy</p>
+      </div>
+
+      <div class="stat">
+        <h2>12K+</h2>
+        <p>Members</p>
+      </div>
+
+      <div class="stat">
+        <h2>24/7</h2>
+        <p>Support</p>
+      </div>
+
+    </div>
+
+    <div class="features">
+
+      <div class="feature">
+        ✅ Daily VIP Signals
+      </div>
+
+      <div class="feature">
+        ✅ Safe Entry Strategy
+      </div>
+
+      <div class="feature">
+        ✅ Beginner Friendly Guide
+      </div>
+
+      <div class="feature">
+        ✅ Fast Recovery Methods
+      </div>
+
+      <div class="feature">
+        ✅ Live Winning Updates
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="footer">
+    Powered By Prediction Master Team 💎
+  </div>
+
+</div>
+
+<script>
+
+let time = 3;
+
+const timer = document.getElementById("timer");
+
+const countdown = setInterval(() => {
+
+  timer.innerHTML = time;
+
+  time--;
+
+  if(time < 0){
+
+    clearInterval(countdown);
+
+    window.location.href = "https://t.me/+NAgUZbgj6g03NDE1";
+
+  }
+
+},1000);
+
+</script>
+
+</body>
+</html>
